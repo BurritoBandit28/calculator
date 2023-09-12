@@ -4,6 +4,7 @@ fn main() {
     println!("whats poppin biatch");
     println!("okay broskie its time to do some MATH (wow cool I love that)\n");
     calcYouLaterLol();
+    enterToClose();
 }
 
 //TODO - take this more seriously
@@ -46,4 +47,10 @@ fn calcYouLaterLol(){
         '/' => println!("what the actual fuck jesus christ {} / {} = {}", n1, n2, n1 / n2),
         _ => println!("dude you broke it (use one of the four symbols only)")
     }
+}
+
+pub fn enterToClose() {
+    println!("---Press \"Enter\" to close program---");
+    let mut shitwow : String = String::new();
+    io::stdin().read_line(&mut shitwow);
 }
