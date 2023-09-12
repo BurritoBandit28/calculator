@@ -28,8 +28,8 @@ fn calcYouLaterLol(){
         .read_line(&mut n2)
         .expect("imbicile");
 
-    let mut n1 : u32 = n1.trim().parse::<u32>().unwrap();
-    let mut n2 : u32 = n2.trim().parse::<u32>().unwrap();
+    let n1 : u32 = n1.trim().parse::<u32>().unwrap();
+    let n2 : u32 = n2.trim().parse::<u32>().unwrap();
 
     if (n1 == 0u32 || n2 == 0u32) && op.chars().next().unwrap() == '/' {
         println!("you messed up dude, no dividing with 0 you scallywag");
